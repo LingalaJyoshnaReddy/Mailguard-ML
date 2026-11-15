@@ -7,6 +7,8 @@ import platform
 import pandas as pd
 import streamlit as st
 
+from src.mailguard_motion import inject_motion
+inject_motion()
 from src import config
 from src.app_resources import get_model_bundle, load_artifact_json
 from src.features import FEATURE_DESCRIPTIONS

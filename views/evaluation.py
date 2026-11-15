@@ -5,6 +5,8 @@ from __future__ import annotations
 import pandas as pd
 import streamlit as st
 
+from src.mailguard_motion import inject_motion
+inject_motion()
 from src import config
 from src.app_resources import load_artifact_json, theme_is_dark
 from src.charts import (

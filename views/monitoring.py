@@ -7,6 +7,8 @@ import json
 import pandas as pd
 import streamlit as st
 
+from src.mailguard_motion import inject_motion
+inject_motion()
 from src.app_resources import get_metrics_store, theme_is_dark
 from src.charts import class_distribution_chart, latency_chart
 from src.logging_utils import get_log_buffer
